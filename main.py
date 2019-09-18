@@ -45,8 +45,8 @@ def record_docx(date, rows, cols, doc_file):
 
 
 if __name__ == "__main__":
-    csv_path = os.path.abspath(input('Введите название csv-файла:'))
-    doc_file = input('Введите название docx-файла на выходе:')
+     csv_path = os.path.abspath(input('Введите название csv-файла:') + '.csv')
+    doc_file = input('Введите название docx-файла на выходе:') + '.docx'
     doc_path = os.path.abspath(doc_file)
     with open(csv_path, "r", encoding='utf-8') as f_obj:
         date, rows, cols = csv_reader(f_obj)
