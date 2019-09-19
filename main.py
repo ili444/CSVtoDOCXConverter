@@ -45,7 +45,6 @@ def record_docx(date, rows, cols, doc_file):
     return 'ok'
 
 
-
 if __name__ == "__main__":
     csv_path = os.path.abspath(input('Введите название csv-файла:') + '.csv')
     doc_file = input('Введите название docx-файла на выходе:') + '.docx'
